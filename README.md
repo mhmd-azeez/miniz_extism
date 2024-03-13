@@ -44,3 +44,14 @@ Original data len: 69
 Compressed data len: 39
 Decompressed data: Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!
 ```
+
+## Demo
+
+<div>
+    <a href="https://www.loom.com/share/b906b0ddc0ea4ae9b97f1ac16877fe2b">
+      <p>Dylibso March Hackathon: miniz for Extism - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/b906b0ddc0ea4ae9b97f1ac16877fe2b">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/b906b0ddc0ea4ae9b97f1ac16877fe2b-with-play.gif">
+    </a>
+</div>
