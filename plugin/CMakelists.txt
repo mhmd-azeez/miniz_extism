@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.10)
+project(miniz_extism)
+
+# specify the C standard
+set(CMAKE_C_STANDARD 99)
+
+# specify the path to the Miniz library
+set(MINIZ_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../dependencies/miniz")
+set(MINIZ_BINARY_DIR "${CMAKE_CURRENT_BINARY_DIR}/miniz")
+add_subdirectory(${MINIZ_PATH} ${MINIZ_BINARY_DIR})
+include_directories(${MINIZ_PATH})
+
+set(EXTISM_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../dependencies/extism-pdk")
+include_directories(${EXTISM_PATH})
+
+# add the source file
+add_executable(miniz_extism main.c)
+
+# link the Miniz library
+target_link_libraries(miniz_extism miniz)
+
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s STANDALONE_WASM")
