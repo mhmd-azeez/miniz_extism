@@ -30,7 +30,9 @@ func main() {
 
 	defer plugin.Close()
 
-	data := []byte("Hello, World!")
+	data := []byte("Hello, World! Hello, World! Hello, World! Hello, World! Hello, World!")
+	fmt.Printf("Original data: %s\n", string(data))
+	fmt.Printf("Original data len: %v\n", len(data))
 
 	_, out, err := plugin.Call("compress_stream", data)
 	if err != nil {
