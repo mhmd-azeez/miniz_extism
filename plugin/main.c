@@ -7,11 +7,6 @@
 
 #define CHUNK_SIZE 16384
 
-int main() {
-  printf("Miniz version: %s\n", MZ_VERSION);
-  return 0;
-}
-
 int32_t EXTISM_EXPORTED_FUNCTION(compress_stream) {
   uint64_t inputLen = extism_input_length();
 

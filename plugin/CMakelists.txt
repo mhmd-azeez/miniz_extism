@@ -19,7 +19,5 @@ add_executable(miniz_extism main.c)
 # link the Miniz library
 target_link_libraries(miniz_extism miniz)
 
-# set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -s STANDALONE_WASM")
-set(CMAKE_C_FLAGS "--target=wasm32-wasi")
-set(CMAKE_EXE_LINKER_FLAGS "-Wl,--no-entry")
+set(CMAKE_C_FLAGS "--target=wasm32-wasi -mexec-model=reactor")
 set_target_properties(miniz_extism PROPERTIES OUTPUT_NAME miniz_extism.wasm)
