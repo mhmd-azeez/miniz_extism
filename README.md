@@ -1,5 +1,9 @@
 # miniz for Extism
 
+This repo shows how you can convert a normal C library to an Extism Plugin. [miniz](https://github.com/richgel999/miniz) is a minimal compression library.
+
+## Try it out
+
 1. Fetch all submodules
 
 ```
