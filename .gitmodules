@@ -1,0 +1,6 @@
+[submodule "dependencies/miniz"]
+	path = dependencies/miniz
+	url = https://github.com/richgel999/miniz
+[submodule "dependencies/extism-pdk"]
+	path = dependencies/extism-pdk
+	url = https://github.com/extism/c-pdk
